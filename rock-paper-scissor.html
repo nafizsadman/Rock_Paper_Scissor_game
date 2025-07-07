@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="rock-paper-scissor.css">
+    
+    <title>Rock paper scissor</title>
+</head>
+<body>
+    <p class='header'>Rock Paper Scissor </p>
+    
+    <div class="pick_button">
+        <button onclick="playGame('rock');   
+        " class="js-rock-button">
+            <i class="fa-solid fa-hand-back-fist"></i>
+        </button>
+        
+        <button class="js-paper-button" onclick="playGame('paper')">
+            <i class="fa-solid fa-hand"></i>
+        </button>
+        
+        <button class="js-scissor-button" onclick="playGame('scissor')">
+            <i class="fa-solid fa-hand-scissors"></i>
+        </button>
+    </div>
+    
+    <p class="js-result">You Win.</p>
+    
+    <p class="js-pick">You <span class="js-your-pick">
+        <i class="fa-solid fa-hand-back-fist"></i>
+    </span> 
+    <span class="js-computer-pick">
+        <i class="fa-solid fa-hand-back-fist"></i>
+    </span> Computer</p>
+    
+    <p class="js-score">Win: 0, Ties: 0, Loses: 0</p>
+    
+    <div class="down_btn">
+        <button class="js-reset-button" onclick="resetBtn()">Rest Score</button>
+    
+        <button class="js-auto-paly-button" onclick="autoPaly()">Auto Play</button>
+    </div>
+    
+    <script src="rock-paper-scissor.js"></script>
+</body>
+</html>
